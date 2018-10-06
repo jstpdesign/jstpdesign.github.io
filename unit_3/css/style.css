@@ -4,11 +4,6 @@ h1 {
 	font-size: 50px;
 }
 
-#nav {
-	background-color: black;
-	color: white;
-}
-
 #hero {
 	text-align: center
 }
@@ -42,4 +37,32 @@ img {
 
 a {
 	text-decoration: none
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Helvetica, sans-serif;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
