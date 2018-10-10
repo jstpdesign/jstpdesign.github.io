@@ -8,17 +8,26 @@ h1 {
 	text-align: center
 }
 
+img.main {
+    width: 1067px;
+    height: 600px;
+}
+
 #intro {}
 
 #direction {}
 
-#daily {}
-
 #super {}
 
-#special {}
+#daily {}
 
-#illustration {}
+#redeye {}
+
+#ipad {}
+
+.art {
+    
+}
 
 body {
 	text-align: center;
@@ -32,7 +41,7 @@ h1, p {
 }
 
 img {
-	width: 200px
+	width: 300px
 }
 
 a {
