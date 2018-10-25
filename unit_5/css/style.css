@@ -19,7 +19,7 @@ header {
 
 nav {
     font-family: Roboto, sans-serif;
-    background-color: black;
+    background-color: #232323;
 }
 
 .navlink {
@@ -52,12 +52,11 @@ h1 {
 }
 
 #lander {
-/*    background:url(../images/heroimage_rough.jpg);
+    background:url(../images/heroimage_rough.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;*/
-	background-color: #FFED74;
+    background-size: cover;
     text-align: center;
     font-family: "Roboto Slab", serif;
     font-weight: 400;
@@ -155,13 +154,12 @@ img {
 
 #outro {
     padding: 2em 0;
-    background-color: #FFE2B8;
 }
 
 
 footer {
     clear: both;
-    background-color: #FF957E;
+    background-color: #eeeeee;
     padding: 20px;
 }
 
