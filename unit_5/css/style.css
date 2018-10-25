@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #E89C6C;
+    background-color: white;
     font-size: 16px;/* *1em - 16px**/
     position: relative;
     font-family: 'Roboto Slab', serif
@@ -19,7 +19,7 @@ header {
 
 nav {
     font-family: Roboto, sans-serif;
-    background-color: #E8C66A;
+    background-color: black;
 }
 
 .navlink {
@@ -129,7 +129,7 @@ img {
     width: 20px;
     margin-right: 5px;
 }
-
+/*
 .fourcolumns {
     display: flex;
     flex-wrap: wrap;
@@ -142,6 +142,15 @@ img {
     padding-left: 1em;
     padding-right: 1em;
     /*float: left;*/
+}
+*/
+
+.grid-item img {
+    width: 200px;
+}
+
+.grid-item--width2 {
+    width: 400px;
 }
 
 #outro {
