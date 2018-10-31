@@ -13,10 +13,6 @@ body {
     font-family: 'Roboto Slab', serif
 }
 
-header {
-
-}
-
 nav {
     font-family: Roboto, sans-serif;
     background-color: #232323;
@@ -34,7 +30,7 @@ nav a:hover {
 }
 
 .container {
-    max-width: 1024px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -45,34 +41,41 @@ nav .container {
 h1 {
     font-family: Roboto, sans-serif;
     font-weight: 700;
-    font-size: 60px;
-	text-align: center;
+    font-size: 45px;
+	text-align: left;
+    text-transform: uppercase;
     color: black;
+    padding-top: 145px;
     padding-bottom: 0.2em;
 }
 
-/*#lander {
-    background:url(../images/heroimage_rough.jpg);
+#lander {
+    background:url(../images/cropped_main.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    text-align: center;
+    text-align: left;
     font-family: "Roboto Slab", serif;
     font-weight: 400;
     height: 56.25vw;
-    max-height: 600px;
+    max-height: 555px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
+    justify-content: left;
+    align-items: left;
+    margin-bottom: 50px
+}
 
-/*#lander */header {
+#lander p {
+    font-size: 16px;
+}
+
+header {
     width: 100%;
-    max-width: 640px;
-    margin: 0 auto;
-    padding-top: 40px;
+    max-width: 505px;
+    padding-top: 35px;
     padding-bottom: 40px;
+    padding-left: 50px;
 }
 
 img.main {
