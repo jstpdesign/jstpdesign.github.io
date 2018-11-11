@@ -6,6 +6,38 @@
     box-sizing: border-box;
 }
 
+<style>
+/* body:before will also work
+ as will body:after */
+:root:before {
+  content: url(../images/vikings_section.jpg)
+           url(../images/twins_ss_2016.jpg)
+           url(../images/breakingbad.jpg)
+           url(../images/xgames.jpg)
+           url(../images/blackhawks.jpg)
+           url(../images/loons_ss.jpg)
+           url(../images/divvy.jpg)
+           url(../images/robin_williams.jpg)
+           url(../images/sb_ss.jpg)
+           url(../images/sb_rings.jpg)
+           url(../images/moss_purple.jpg)
+           url(../images/ipad_sexiest.jpg)
+           url(../images/sb_monday.jpg)
+           url(../images/referee.jpg)
+           url(../images/ipad_mac.jpg)
+           url(../images/mlb_catcher.jpg)
+           url(../images/rio_swim.jpg)
+           url(../images/twins_failure.jpg)
+           url(../images/ipad_soa.jpg)
+           url(../images/ipad_simpsons.jpg);
+  /* partial fallback */
+  background-image: url(../images/vikings_section.jpg);
+  visibility: hidden;
+  position: absolute;
+  left: -999em;
+}
+</style>
+
 body {
     background-color: white;
     font-size: 16px;/* *1em - 16px**/
@@ -158,20 +190,20 @@ img {
     width: 400px;
     padding-right: 10px;
     padding-left: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 1.25em;
 }
 
 .grid-item--width2 p {
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
 }
 
 
 footer {
     clear: both;
     background-color: #eeeeee;
-    padding: 20px;
+    padding: 1.25em;
 }
 
 footer a {
