@@ -187,10 +187,17 @@
 		  // options
 		});
 
-		window.addEventListener('load', function() {  	document.querySelector('.navlink').addEventListener('click', function(e) {         e.preventDefault();         document.querySelector('#bio').scrollIntoView({ behavior: 'smooth' });       });  });
+				// init Masonry
+		var $grid = $('.grid').masonry({
+		  // options...
+		});
+		// layout Masonry after each image loads
+		$grid.imagesLoaded().progress( function() {
+		  $grid.masonry('layout');
+		});
+
+		// window.addEventListener('load', function() {  	document.querySelector('.navlink').addEventListener('click', function(e) {         e.preventDefault();         document.querySelector('#bio').scrollIntoView({ behavior: 'smooth' });       });  });
 	</script>
 
-	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-	
 </body>
 </html>
