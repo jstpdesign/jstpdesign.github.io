@@ -38,6 +38,12 @@ nav .container {
     display: flex;
 }
 
+/*.navlink img {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}*/
+
 h1 {
     font-family: Roboto, sans-serif;
     font-weight: 700;
@@ -78,30 +84,10 @@ header {
     padding-left: 3.125em;
 }
 
-img.main {
+/*img.main {
     width: 1067px;
     height: 600px;
-}
-
-#intro img {
-    width: 425px;
-    padding-top: 2.5em;
-    float: left;
-    padding-right: 1.5em;
-    margin-bottom: 1.5em;
-}
-
-#intro h2 {
-    padding-top: 2em;
-}
-
-#intro p {
-    padding-top: .5em;
-}
-
-#intro {
-    margin-bottom: 3em;
-}
+}*/
 
 h2 {
    font-family: Roboto, sans-serif;
@@ -121,19 +107,35 @@ h4 {
 
 p {
     font-family: 'Roboto Slab', serif;
-	color: black;
+    color: black;
 }
 
 img {
-	width: 100%;
+    width: 100%;
     display: block
 }
 
-.navlink img {
-    height: 20px;
-    width: 20px;
-    margin-right: 5px;
+hr {
+    margin-top: 2em;
+/*    margin-bottom: 2em;*/
 }
+
+#bio {
+    margin-bottom: 3em;
+    padding-top: 2.5em;
+}
+
+#bio img {
+    width: 35%/*425px*/;
+    float: left;
+    padding-right: 1.5em;
+/*    margin-bottom: 1.5em;*/
+}
+
+#bio p {
+    padding-top: .5em;
+}
+
 /*
 .fourcolumns {
     display: flex;
@@ -167,7 +169,6 @@ img {
     padding-right: 1.25em;
 }
 
-
 footer {
     clear: both;
     background-color: #eeeeee;
@@ -185,10 +186,6 @@ footer a:hover {
 
 footer p {
     float: right;
-}
-
-hr {
-    margin-top: 1.5em;
 }
 
 .clearfix:after {
