@@ -5,6 +5,7 @@
 		<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="masonry.pkgd.min.js"></script>
+		<script src="imagesloaded.pkgd.min"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
@@ -186,6 +187,35 @@
 		var msnry = new Masonry( '.grid', {
 		  // options
 		});
+
+
+		imagesLoaded( elem, callback )
+		// options
+		imagesLoaded( elem, options, callback )
+		// you can use `new` if you like
+		new imagesLoaded( elem, callback )
+
+
+		// element
+		imagesLoaded( document.querySelector('#container'), function( instance ) {
+		  console.log('all images are loaded');
+		});
+		// selector string
+		imagesLoaded( '#container', function() {...});
+		// multiple elements
+		var posts = document.querySelectorAll('.post');
+		imagesLoaded( posts, function() {...});
+
+
+
+		var imgLoad = imagesLoaded( elem );
+		function onAlways( instance ) {
+		  console.log('all images are loaded');
+		}
+		// bind with .on()
+		imgLoad.on( 'always', onAlways );
+		// unbind with .off()
+		imgLoad.off( 'always', onAlways );
 
 		// window.addEventListener('load', function() {  	document.querySelector('.navlink').addEventListener('click', function(e) {         e.preventDefault();         document.querySelector('#bio').scrollIntoView({ behavior: 'smooth' });       });  });
 	</script>
