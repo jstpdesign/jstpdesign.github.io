@@ -2,10 +2,7 @@
 <html>
 	<head>
 		<title>JSTP's Portfolio</title>
-		<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="masonry.pkgd.min.js"></script>
-		<script src="imagesloaded.pkgd.min"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
@@ -14,9 +11,9 @@
 		<nav id="navigation">
 		<div class="container">
 			<a class="navlink" href="index.html">JSTPDESIGN</a>
-			<a class="navlink" href="mailto:jstpdesign@gmail.com"><!-- <img src="images/ga_email.png"> --><span>Message me</span></a>
-			<a class="navlink" target="_blank" href="http://twitter.com/jaystpierre"><!-- <img src="images/ga_tweet.png"> --><span>Tweet, Tweet</span></a>
-			<a class="navlink" target="_blank" href="http://instagram.com/thejaystpierre/"><!-- <img src="images/ga_insta.png"> --><span>Through my lens</span></a>
+			<a class="navlink" href="mailto:jstpdesign@gmail.com"><span>Message me</span></a>
+			<a class="navlink" target="_blank" href="http://twitter.com/jaystpierre"><span>Tweet, Tweet</span></a>
+			<a class="navlink" target="_blank" href="http://instagram.com/thejaystpierre/"><span>Through my lens</span></a>
 			<a class="navlink" href="#bio">About me</a>
 		</div>
 		</nav>
@@ -29,7 +26,7 @@
 		</div>
 
 
-					<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+					<div class="grid" id="container" data-masonry='{ "itemSelector": ".grid-item" }'>
 						<div class="grid-item grid-item--width2">
 							<img src="images/vikings_section.jpg" alt="Picture of Vikings NFL Preview Section" title="Star Tribune Vikings Preview Cover">
 							<h3>Vikings Preview</h3>
@@ -169,55 +166,26 @@
 
 
             <footer>
-                <!-- <a href="index.html">JSTPDESIGN</a>  |   --><a href="mailto:jstpdesign@gmail.com?subject=Hello, there!"><span>E-mail</span></a>  |  <a target="_blank" href="http://twitter.com/jaystpierre"><span>Twitter</span></a>  |  <a target="_blank" href="http://instagram.com/thejaystpierre/"><span>Instagram</span></a>
+                <a href="mailto:jstpdesign@gmail.com?subject=Hello, there!"><span>E-mail</span></a>  |  <a target="_blank" href="http://twitter.com/jaystpierre"><span>Twitter</span></a>  |  <a target="_blank" href="http://instagram.com/thejaystpierre/"><span>Instagram</span></a>
                 <p>&copy; JSTPDESIGN 2018</p>
             </footer>
 
 	</div>
-	<script> 
-		var elem = document.querySelector('.grid');
-		var msnry = new Masonry( elem, {
-  			// options
-			  itemSelector: '.grid-item',
-			  columnWidth: 200
-		});
 
-		// element argument can be a selector string
-		//   for an individual element
-		var msnry = new Masonry( '.grid', {
-		  // options
-		});
-
-
-		imagesLoaded( elem, callback )
-		// options
-		imagesLoaded( elem, options, callback )
-		// you can use `new` if you like
-		new imagesLoaded( elem, callback )
-
-
+	<script src="masonry.pkgd.min.js"></script>
+	<script src="imagesloaded.pkgd.min.js"></script>
+	
+	<script>
 		// element
 		imagesLoaded( document.querySelector('#container'), function( instance ) {
-		  console.log('all images are loaded');
+			console.log('all images are loaded');
+			var elem = document.querySelector('.grid');
+			var msnry = new Masonry( elem, {
+  				// options
+			  itemSelector: '.grid-item'
+			});
 		});
-		// selector string
-		imagesLoaded( '#container', function() {...});
-		// multiple elements
-		var posts = document.querySelectorAll('.post');
-		imagesLoaded( posts, function() {...});
 
-
-
-		var imgLoad = imagesLoaded( elem );
-		function onAlways( instance ) {
-		  console.log('all images are loaded');
-		}
-		// bind with .on()
-		imgLoad.on( 'always', onAlways );
-		// unbind with .off()
-		imgLoad.off( 'always', onAlways );
-
-		// window.addEventListener('load', function() {  	document.querySelector('.navlink').addEventListener('click', function(e) {         e.preventDefault();         document.querySelector('#bio').scrollIntoView({ behavior: 'smooth' });       });  });
 	</script>
 
 </body>
