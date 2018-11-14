@@ -89,18 +89,31 @@ h3 {
     text-align: center;
 }
 
-h4 {
-    font-family: Roboto, sans-serif;
-}
-
 p {
     font-family: 'Roboto Slab', serif;
     color: black;
 }
 
-img {
+/*img {
     width: 100%;
     display: block
+}*/
+
+.grid-item img {
+    width: 100%;
+}
+
+.grid-item--width2 {
+    width: 33.333%;
+    padding-right: .625em;
+    padding-left: .625em;
+    padding-bottom: 1.25em;
+}
+
+.grid-item--width2 p {
+    text-align: center;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
 }
 
 hr {
@@ -119,29 +132,10 @@ hr {
     float: left;
     padding-right: 1.25em;
     padding-bottom: 0.06em;
-/*    margin-bottom: 1.5em;*/
 }
 
 #bio p {
     padding-top: .5em;
-}
-
-
-.grid-item img {
-    width: 100%;
-}
-
-.grid-item--width2 {
-    width: 33.333%;
-    padding-right: .625em;
-    padding-left: .625em;
-    padding-bottom: 1.25em;
-}
-
-.grid-item--width2 p {
-    text-align: center;
-    padding-left: 1.25em;
-    padding-right: 1.25em;
 }
 
 footer {
@@ -187,7 +181,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 705px) {
+@media screen and (max-width: 710px) {
 
     #bio {
         margin-bottom: 2.5em;
