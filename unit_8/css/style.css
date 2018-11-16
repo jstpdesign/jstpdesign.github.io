@@ -235,5 +235,7 @@ footer p {
 
 @media screen and (max-width: 515px) {
     footer p {
-    visibility: hidden;
+        font-size: .875em;
+        float: none;
+        padding: .25em .5em; 
     }
