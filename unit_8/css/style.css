@@ -20,9 +20,8 @@ nav {
 
 .navlink {
     color: white;
-    padding: 1em 1.5em;
+    padding: 1em 1.3em;
     text-decoration: none;
-    display: flex;
 }
 
 nav a:hover {
@@ -178,6 +177,7 @@ footer p {
     display: none;
 }
 
+
 @media screen and (max-width: 1000px) {
     .grid-item--width2 {
         width: 50%;
@@ -214,6 +214,16 @@ footer p {
 
     footer a:hover {
         padding: 0.5em 0.5em; 
+    }
+}
+
+@media screen and (max-width: 625px) {
+    nav {
+    font-size: .875em;
+    }
+
+    .navlink {
+    padding: 1em 1.2em;
     }
 }
 
