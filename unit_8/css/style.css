@@ -37,35 +37,34 @@ nav .container {
     display: flex;
 }
 
-h1 {
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-    font-size: 2.813em;
-	text-align: left;
-    text-transform: uppercase;
-    color: black;
-    padding-top: 3em;
-    padding-bottom: 0.2em;
-}
-
 #lander {
     background:url(../images/cropped_main.jpg) no-repeat top right;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 56.25vw;
+    max-height: 34.688em;
+    margin-bottom: 3.125em;
     text-align: left;
     font-family: "Roboto Slab", serif;
     font-weight: 400;
-    height: 56.25vw;
-    max-height: 34.688em;
-    display: flex;
     justify-content: left;
     align-items: left;
-    margin-bottom: 3.125em
 }
 
-#lander p {
+h1 {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 2.813em;
+    text-align: left;
+    text-transform: uppercase;
+    color: black;
+    padding-top: 3em;
+    padding-bottom: 0.2em;
+}
+
+.lander p {
     font-size: 1em;
 }
 
@@ -239,3 +238,4 @@ footer p {
         float: none;
         padding: .25em .5em; 
     }
+}
