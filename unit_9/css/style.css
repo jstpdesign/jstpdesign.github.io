@@ -231,17 +231,27 @@ footer p {
 }
 
 @media screen and (max-width: 515px) {
+/*    nav {
+        font-size: .75em;
+    }
+
+    .navlink {
+        padding: 1em 1.2em;
+    }*/
+
+    footer p {
+        font-size: .875em;
+        float: none;
+        padding: .25em .5em; 
+    }
+}
+
+@media screen and (max-width: 465px) {
     nav {
         font-size: .75em;
     }
 
     .navlink {
         padding: 1em 1.2em;
-    }
-
-    footer p {
-        font-size: .875em;
-        float: none;
-        padding: .25em .5em; 
     }
 }
