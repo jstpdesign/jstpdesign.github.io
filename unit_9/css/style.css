@@ -184,6 +184,15 @@ footer p {
 }
 
 @media screen and (max-width: 710px) {
+    #lander {
+        background:url(../images/main_small.jpg) no-repeat top right;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+        height: 65vw;
+    }
+
     #bio {
         margin-bottom: 2.5em;
         padding-top: 2.5em;

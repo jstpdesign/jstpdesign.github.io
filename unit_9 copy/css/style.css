@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400|Roboto:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-size: 16px;/* *1em - 16px**/
+    position: relative;
+    font-family: 'Roboto Slab', serif
+}
+
+nav {
+    font-family: Roboto, sans-serif;
+    background-color: #232323;
+}
+
+.navlink {
+    color: white;
+    padding: 1em 1.3em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #111;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav .container {
+    display: flex;
+}
+
+#lander {
+    background:url(../images/cropped_main.jpg) no-repeat top right;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 56.25vw;
+    max-height: 34.688em;
+    margin-bottom: 3.125em;
+}
+
+#lander h1 {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    font-weight: black;
+    text-align: left;
+    text-transform: uppercase;
+    color: black;
+    padding-top: 2em;
+    padding-left: 1.5em;
+}
+
+#lander p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    text-align: left;
+    max-width: 480px;
+    padding-left: 4.25em;
+}
+
+header {
+    width: 100%;
+    padding: 2.75em 2.75em 3em;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    display: none;
+}
+
+h1 {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 5em;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    padding-bottom: 0.1em;
+}
+
+#lander2 p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    padding-top: 0.1em;
+}
+
+h2 {
+   font-family: Roboto, sans-serif;
+   font-size: 1.5em;
+   text-transform: uppercase;
+}
+
+h3 {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+    color: black;
+}
+
+/*img {
+    width: 100%;
+    display: block
+}*/
+
+.grid-item img {
+    width: 100%;
+}
+
+.grid-item--width2 {
+    width: 33.333%;
+    padding-right: .625em;
+    padding-left: .625em;
+    padding-bottom: 1.25em;
+}
+
+.grid-item--width2 p {
+    text-align: center;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+}
+
+hr {
+    margin-top: 2em;
+}
+
+#bio {
+    margin-bottom: 3em;
+    padding-top: 2.5em;
+    padding-right: 1.5em;
+    padding-left: 2.5em;
+}
+
+#bio img {
+    width: 20em;
+    float: left;
+    padding-right: 1.25em;
+    padding-bottom: 0.06em;
+}
+
+#bio p {
+    padding-top: .5em;
+}
+
+footer {
+    clear: both;
+    background-color: #eeeeee;
+    padding: 1.25em;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    padding: 0 0.5em; 
+}
+
+footer a:hover {
+    color: #dd0000;
+    padding: 0 0.5em; 
+}
+
+footer p {
+    float: right;
+}
+
+.clearfix:after {
+    display: block;
+    content: " ";
+    clear: both;
+
+    height: 0;
+    font-style: 0;
+    visibility: hidden;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 1090px) {
+    #lander h1 {
+        display: none;
+    }
+
+    #lander p {
+        display: none;
+    }
+
+    #lander {
+        margin-bottom: 0.25em;
+    }
+
+    header {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .grid-item--width2 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    header {
+        padding: 2em 2.5em;
+    }
+
+    h1 {
+        font-size: 4em;
+        padding-bottom: 0em;
+    }
+
+    #lander2 p {
+        font-size: 1em;
+        line-height: 1.45em;
+        padding-top: 0.1em;
+    }
+}
+
+
+@media screen and (max-width: 710px) {
+    #lander {
+        background:url(../images/main_small.jpg) no-repeat top right;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+        height: 65vw;
+    }
+
+    #bio {
+        margin-bottom: 2.5em;
+        padding-top: 2.5em;
+        padding-right: 2.5em;
+        padding-left: 2.5em;
+    }
+
+    #bio img {
+        width: 100%;
+        padding-bottom: 1.5em;
+    }
+
+    #bio p {
+        padding-top: .5em;
+    }
+
+    footer {
+        padding-top: 1.25em;
+        padding-bottom: 1.25em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+
+    footer a {
+        padding: 0.5em 0.5em; 
+    }
+
+    footer a:hover {
+        padding: 0.5em 0.5em; 
+    }
+}
+
+
+@media screen and (max-width: 665px) {
+    header {
+        padding: 2em;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        font-size: .875em;
+    }
+
+    .navlink {
+        padding: 1em 1.25em;
+    }
+
+    .grid-item--width2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    #lander2 p {
+        font-size: .95em;
+        line-height: 1.49em;
+        padding-top: 0.1em;
+    }
+}
+
+@media screen and (max-width: 515px) {
+/*    nav {
+        font-size: .75em;
+    }
+
+    .navlink {
+        padding: 1em 1.2em;
+    }*/
+
+    footer p {
+        font-size: .875em;
+        float: none;
+        padding: .25em .5em; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.25em;
+    }
+
+    #lander2 p {
+        font-size: .925em;
+        line-height: 1.48em;
+        padding-top: 0.1em;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    nav {
+        font-size: .75em;
+    }
+
+    .navlink {
+        padding: 1em 1.2em;
+    }
+}
