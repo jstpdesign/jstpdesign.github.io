@@ -46,51 +46,34 @@ nav .container {
     height: 56.25vw;
     max-height: 34.688em;
     margin-bottom: 3.125em;
-}
-
-#lander h1 {
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-    font-size: 3em;
-    font-weight: black;
     text-align: left;
-    text-transform: uppercase;
-    color: black;
-    padding-top: 2em;
-    padding-left: 1.5em;
-}
-
-#lander p {
-    font-size: 1.1em;
-    line-height: 1.5em;
-    text-align: left;
-    max-width: 480px;
-    padding-left: 4.25em;
-}
-
-header {
-    width: 100%;
-    padding: 2.75em 2.75em 3em;
-    text-align: center;
     font-family: "Roboto Slab", serif;
     font-weight: 400;
-    display: none;
+    justify-content: left;
+    align-items: left;
 }
 
 h1 {
     font-family: Roboto, sans-serif;
     font-weight: 700;
-    font-size: 5em;
-    text-align: center;
+    font-size: 2.813em;
+    text-align: left;
     text-transform: uppercase;
     color: black;
-    padding-bottom: 0.1em;
+    padding-top: 3em;
+    padding-bottom: 0.2em;
 }
 
-#lander2 p {
-    font-size: 1.3em;
-    line-height: 1.5em;
-    padding-top: 0.1em;
+.lander p {
+    font-size: 1em;
+}
+
+header {
+    width: 100%;
+    max-width: 505px;
+    padding-top: 2.188em;
+    padding-bottom: 2.5em;
+    padding-left: 3.125em;
 }
 
 h2 {
@@ -194,47 +177,11 @@ footer p {
 }
 
 
-@media screen and (max-width: 1090px) {
-    #lander h1 {
-        display: none;
-    }
-
-    #lander p {
-        display: none;
-    }
-
-    #lander {
-        margin-bottom: 0.25em;
-    }
-
-    header {
-        display: block;
-    }
-}
-
 @media screen and (max-width: 1000px) {
     .grid-item--width2 {
         width: 50%;
     }
 }
-
-@media screen and (max-width: 850px) {
-    header {
-        padding: 2em 2.5em;
-    }
-
-    h1 {
-        font-size: 4em;
-        padding-bottom: 0em;
-    }
-
-    #lander2 p {
-        font-size: 1em;
-        line-height: 1.45em;
-        padding-top: 0.1em;
-    }
-}
-
 
 @media screen and (max-width: 710px) {
     #lander {
@@ -278,17 +225,6 @@ footer p {
     }
 }
 
-
-@media screen and (max-width: 665px) {
-    header {
-        padding: 2em;
-    }
-
-    h1 {
-        font-size: 3.5em;
-    }
-}
-
 @media screen and (max-width: 600px) {
     nav {
         font-size: .875em;
@@ -300,18 +236,6 @@ footer p {
 
     .grid-item--width2 {
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    h1 {
-        font-size: 3em;
-    }
-
-    #lander2 p {
-        font-size: .95em;
-        line-height: 1.49em;
-        padding-top: 0.1em;
     }
 }
 
@@ -328,19 +252,6 @@ footer p {
         font-size: .875em;
         float: none;
         padding: .25em .5em; 
-    }
-}
-
-
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 2.25em;
-    }
-
-    #lander2 p {
-        font-size: .925em;
-        line-height: 1.48em;
-        padding-top: 0.1em;
     }
 }
 
