@@ -191,16 +191,16 @@ footer p {
 
 
 @media screen and (max-width: 1090px) {
+    #lander {
+        margin-bottom: 0.25em;
+    }
+
     #lander h1 {
         display: none;
     }
 
     #lander p {
         display: none;
-    }
-
-    #lander {
-        margin-bottom: 0.25em;
     }
 
     header {
