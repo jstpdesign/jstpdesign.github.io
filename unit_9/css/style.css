@@ -234,7 +234,7 @@ footer p {
 
 @media screen and (max-width: 710px) {
     #lander {
-        background:url(../images/main_small.jpg) no-repeat top right;
+        background:url(../images/cropped_square.jpg) no-repeat top right;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
