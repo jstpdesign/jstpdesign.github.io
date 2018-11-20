@@ -109,11 +109,6 @@ p {
     color: black;
 }
 
-/*img {
-    width: 100%;
-    display: block
-}*/
-
 .grid-item img {
     width: 100%;
 }
@@ -286,6 +281,12 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
+    .grid-item--width2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
     nav {
         font-size: .875em;
     }
@@ -294,12 +295,6 @@ footer p {
         padding: 1em 1.25em;
     }
 
-    .grid-item--width2 {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 550px) {
     h1 {
         font-size: 3em;
     }
@@ -312,14 +307,6 @@ footer p {
 }
 
 @media screen and (max-width: 515px) {
-/*    nav {
-        font-size: .75em;
-    }
-
-    .navlink {
-        padding: 1em 1.2em;
-    }*/
-
     footer p {
         font-size: .875em;
         float: none;
