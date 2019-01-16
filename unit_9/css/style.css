@@ -37,6 +37,18 @@ nav .container {
     display: flex;
 }
 
+.foo {
+    display: block;
+}
+
+/*.fa {
+    color: white;
+    font-size: 2.5em;
+    padding: .25em .5 .25em .5em;
+    font-weight: 400;
+    text-decoration: none;
+}*/
+
 #lander {
     background:url(../images/cropped_main.jpg) no-repeat top right;
     -webkit-background-size: cover;
